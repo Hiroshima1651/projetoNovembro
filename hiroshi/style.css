@@ -1,0 +1,183 @@
+:root{
+  --bg:#070607;
+  --panel:#0f0f12;
+  --accent:#9b1cfc;
+  --danger:#ff3b3b;
+  --muted:#9aa0a6;
+}
+
+html,body{
+  height:100%; margin:0;
+  background:#070607;
+  background:
+    radial-gradient(1200px 600px at 10% 10%, rgba(155,28,252,0.08), transparent 10%),
+    radial-gradient(900px 500px at 90% 90%, rgba(0,0,0,0.25), transparent 10%),
+    var(--bg);
+  font-family: "Inter", sans-serif;
+  color:#e6e6e6;
+}
+
+.watermark{
+  position:fixed; inset:0; pointer-events:none;
+  background:url("will_smith_confia_placeholder.jpg") center/cover no-repeat;
+  filter:grayscale(1) blur(2px);
+  opacity:0.06;
+}
+
+.container{
+  min-height:100vh; display:flex; justify-content:center; align-items:center;
+  padding:32px;
+}
+
+.card{
+  width:980px; max-width:98%;
+  display:grid; grid-template-columns:1fr 400px;
+  gap:24px;
+  background:rgba(255,255,255,0.02);
+  border:1px solid rgba(255,255,255,0.06);
+  padding:28px; border-radius:12px;
+  box-shadow:0 10px 40px rgba(0,0,0,0.7);
+  position:relative;
+}
+
+.brand{
+  font-family:"UnifrakturCook", serif;
+  font-size:48px;
+  color:var(--accent);
+  text-shadow:2px 0 rgba(155,28,252,0.15);
+  animation:glitch 3s infinite linear;
+}
+
+.subtitle{
+  font-size:12px; color:var(--muted);
+  margin-top:4px; letter-spacing:1.4px;
+  text-transform:uppercase;
+}
+
+.left{display:flex; flex-direction:column; gap:14px;}
+
+.meme{
+  display:flex; gap:12px;
+  background:#0b0b0c; padding:12px;
+  border-radius:8px;
+  border:1px dashed rgba(255,255,255,0.04);
+}
+
+.meme img{
+  width:120px; height:120px; border-radius:6px; object-fit:cover;
+}
+
+.meme .meta h3{margin:0; font-size:18px;}
+.meme .meta p{margin:0; font-size:13px; color:var(--muted);}
+
+form{
+  background:rgba(255,255,255,0.02);
+  padding:20px; border-radius:8px;
+  border:1px solid rgba(255,255,255,0.04);
+}
+
+label{
+  display:block; font-size:12px; color:var(--muted); margin:6px 0;
+}
+
+input{
+  width:100%; padding:10px;
+  background:#0b0b0d;
+  border:1px solid rgba(255,255,255,0.06);
+  border-radius:6px;
+  color:#bbb;
+}
+
+.row{display:flex; gap:12px;}
+.small{flex:1;}
+
+.pay-btn{
+  margin-top:12px; padding:12px 16px;
+  border:none; border-radius:8px;
+  background:linear-gradient(90deg,var(--accent),#ff6b9a);
+  color:white; font-weight:600;
+  cursor:not-allowed; opacity:0.8;
+}
+
+.note{
+  font-size:12px; color:var(--muted);
+  margin-top:10px; border-left:3px solid rgba(155,28,252,0.12);
+  padding-left:10px;
+}
+
+.right{display:flex; flex-direction:column; gap:12px;}
+
+.danger{
+  padding:12px; border-radius:8px;
+  background:rgba(255,59,59,0.08);
+  border:1px solid rgba(255,59,59,0.1);
+  font-weight:600;
+}
+
+.box{
+  background:rgba(255,255,255,0.03);
+  padding:12px; border-radius:8px;
+  font-size:13px; color:var(--muted);
+}
+
+.stamp{
+  position:absolute;
+  right:20px; top:18px;
+  font-family:"UnifrakturCook", serif;
+  font-size:80px; opacity:0.06;
+  transform:rotate(-12deg);
+}
+
+.smallprint{font-size:11px; color:var(--muted);}
+
+@keyframes glitch{
+  0%{transform:translateX(0);}
+  20%{transform:translateX(-2px);}
+  40%{transform:translateX(2px);}
+  60%{transform:translateX(-1px);}
+  80%{transform:translateX(1px);}
+  100%{transform:translateX(0);}
+}
+
+@media (max-width:880px){
+  .card{grid-template-columns:1fr;}
+}
+/* ======== 1. FONTE LOCAL ======== */
+/* Coloque o arquivo da fonte (ex.: Wolf.ttf) na mesma pasta do style.css */
+@font-face {
+  font-family: 'MinhaFonteLocal';
+  src: url('wolfenstein.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Aplicar a fonte no título ou no site inteiro */
+body {
+  font-family: 'MinhaFonteLocal', sans-serif;
+}
+
+/* Se quiser aplicar só ao título: */
+.brand { font-family: 'MinhaFonteLocal'; } 
+
+
+
+/* ======== 2. IMAGEM PRINCIPAL ======== */
+/* Troque a imagem de exemplo pela sua (ex.: minha_foto.jpg) */
+.meme img {
+  content: url("will-smith-confia.gif");
+}
+
+
+
+/* ======== 3. IMAGEM NO FUNDO DO SITE TODO ======== */
+/* Também coloque o arquivo na mesma pasta e troque o nome */
+body {
+  background: url("will-smith-confia.gif") center/cover no-repeat fixed;
+  background-color: #000; /* fallback */
+}
+body {
+  font-size: 20px;
+}
+.brand {
+  font-size: 6rem;
+}
