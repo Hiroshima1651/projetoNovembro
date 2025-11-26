@@ -4,10 +4,10 @@
 const produtos = [
   {id:1,title:'amigo amigal',price:59.90,img:'SAAAAAAAAA.jpg'},
   {id:2,title:'LERO LERO',price:29.50,img:'apucasticas.jpg'},
-  {id:3,title:'Boné Legal',price:39.00,img:'images/bone.jpg'},
-  {id:4,title:'Poster Colorido',price:19.90,img:'images/poster.jpg'},
-  {id:5,title:'Almofada Macia',price:79.90,img:'images/almofada.jpg'},
-  {id:6,title:'!@#$@$%&@$!""""Q¨&(*())',price:9999999999999999999999999999999999999999999999999999999999999999.00000000000000000000000000000000000000000000000000000000000,img:'image.png'},
+  {id:3,title:'home arenha',price:39.00,img:'abuashabababa3.jpg'},
+  {id:4,title:'pato',price:19.90,img:'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.jpg'},
+  {id:5,title:'mexirica fugitiva',price:79.90,img:'amigo.jpg'},
+  {id:6,title:'!@#$@$%&@$!""""Q¨&(*())',price:999,img:'image.png'},
 ];
 
 const catalogEl = document.getElementById('catalog');
