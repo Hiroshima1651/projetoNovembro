@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   btn.addEventListener("click", (e) => {
     e.preventDefault();
-    alert("PARÓDIA — Não existe pagamento aqui. É só zueira visual.");
+    alert("foi brutalmente roubado e vazei teus dados");
     console.warn("Página paródica: nenhum dado é coletado, enviado ou armazenado.");
   });
 
