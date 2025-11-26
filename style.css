@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+* {
+  font-family: 'Dela Gothic One', sans-serif;
+}
+
+header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  padding: 0;
+  border-bottom: 3px solid #0f3460;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.logo {
+  font-size: 2.8rem;
+  letter-spacing: 4px;
+  text-shadow: 0 0 20px rgba(233,69,96,0.8), 0 0 40px rgba(233,69,96,0.4);
+  padding: 20px 40px;
+  background: linear-gradient(135deg, #e94560 0%, #533483 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.menu {
+  display: flex;
+  gap: 5px;
+  padding: 0 20px 0 40px;
+  align-items: flex-end;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  position: relative;
+  background: linear-gradient(180deg, #2d3561 0%, #1f2544 100%);
+  border-radius: 12px 12px 0 0;
+  border: 2px solid #0f3460;
+  border-bottom: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+}
+
+.menu a:hover {
+  background: linear-gradient(180deg, #3d4771 0%, #2f3654 100%);
+  transform: translateY(-5px);
+  box-shadow: 0 -5px 20px rgba(233,69,96,0.4), 0 0 30px rgba(233,69,96,0.2);
+}
+
+.menu a.active {
+  background: linear-gradient(180deg, #e94560 0%, #533483 100%);
+  transform: translateY(-8px);
+  box-shadow: 0 -8px 25px rgba(233,69,96,0.6), 0 0 40px rgba(233,69,96,0.3);
+}
+body {
+  background: url("images.jpg") center/cover no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
