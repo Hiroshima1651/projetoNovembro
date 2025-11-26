@@ -131,14 +131,7 @@ if(emptyBtn){
   });
 }
 
-const checkoutBtn = document.getElementById('checkout');
-if(checkoutBtn){
-  checkoutBtn.addEventListener('click', ()=>{
-    if(Object.keys(cart).length===0){ alert('Seu carrinho está vazio.'); return; }
-    alert('Obrigado pela compra! (simulação)');
-    cart = {}; saveCart(); renderCart();
-  });
-}
+
 
 // inicialização
 loadCart(); renderCatalog(produtos); renderCart();
