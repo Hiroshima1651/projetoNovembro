@@ -181,3 +181,9 @@ body {
 .brand {
   font-size: 6rem;
 }
+
+body {
+  font-family: 'MinhaFonteLocal', sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px; /* ESPAÇAMENTO GLOBAL */
+}
